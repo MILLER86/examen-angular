@@ -10,11 +10,13 @@ import { ButtonModule } from 'primeng/button'; //nuevo boton
 //nuevos
 
 import { InicioComponent } from './pages/inicio/inicio.component';
+import { TablaPokemonComponent } from './pages/tabla-pokemon/tabla-pokemon.component';
 @NgModule({
   declarations: [
     AppComponent,
     PantallaExamenComponent,
-    InicioComponent
+    InicioComponent,
+    TablaPokemonComponent
   ],
   imports: [
     BrowserModule,

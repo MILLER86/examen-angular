@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tabla-pokemon',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./tabla-pokemon.component.css']
 })
 export class TablaPokemonComponent {
+  
+  constructor(private rutas: Router){
+
+  }
+
+regresarInicio(){
+  this.rutas.navigate(['inicio']);
+}
 
 }
