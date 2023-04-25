@@ -17,7 +17,10 @@ visualizarpantallaexamen(){
       setTimeout(() => {
         this.pantallaexamenVisible = false;
       }, 2000);
+    }
+      irTablaPokemon(){
 
+      }
 }
 
-}
+
