@@ -6,8 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PantallaExamenComponent } from './components/pantallaexamen/pantallaexamen.component';
 
+
+
 //nuevos
-import { ChipsModule } from 'primeng/chips';
+
 import { InicioComponent } from './pages/inicio/inicio.component';
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ChipsModule,
+    
     
   ],
   providers: [],

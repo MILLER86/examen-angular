@@ -8,4 +8,16 @@ import { Component } from '@angular/core';
 export class InicioComponent {
 nombre='Miler ';
 apellido='Villegas';
+pantallaexamenVisible = false;
+
+
+visualizarpantallaexamen(){
+    //codigo pantallaexamen
+      this.pantallaexamenVisible = true;
+      setTimeout(() => {
+        this.pantallaexamenVisible = false;
+      }, 2000);
+
+}
+
 }
