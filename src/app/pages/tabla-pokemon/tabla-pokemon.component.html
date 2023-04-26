@@ -1,2 +1,33 @@
 <h1>Regresar</h1>
-<p-button label="Regresar" icon="pi pi-arrow-left" iconPos="left" (onClick)="regresarInicio()"></p-button>
+
+<p-table
+    [value]="listaEmpleado"
+    [paginator]="true"
+    [rows]="5"
+    [showCurrentPageReport]="true"
+    [tableStyle]="{ 'min-width': '50rem' }"
+    currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} registro"
+    [rowsPerPageOptions]="[10, 25, 50]"
+>
+    <ng-template pTemplate="header">
+        <tr>
+            <th style="width:25%">Nombre</th>
+            <th style="width:25%">Imagen</th>
+            
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-Empleado>
+        <tr>
+            <td>{{ Empleado.employee_name }}</td>
+            <td>{{ Empleado.employee_image }}</td>
+            
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="paginatorleft">
+        <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+    </ng-template>
+    
+</p-table>
+
+
+<p-button label="Regresar" icon="pi pi-angle-left" (onClick)="regresarInicio()"></p-button>
