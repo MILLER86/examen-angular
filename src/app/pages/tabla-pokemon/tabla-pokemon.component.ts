@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { IDataEmpleado } from 'src/app/interfaces/empleadosInterface';
+import { IResultsEmpleado } from 'src/app/interfaces/empleadosInterface';
 import { EmpleadoService } from 'src/app/services/empleado.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { EmpleadoService } from 'src/app/services/empleado.service';
 })
 export class TablaPokemonComponent implements OnInit{
   
-listaEmpleado: IDataEmpleado [] = [];
+listaEmpleado: IResultsEmpleado [] = [];
 
   constructor(private rutas: Router,
        private empleadoService: EmpleadoService){
@@ -27,7 +27,7 @@ listaEmpleado: IDataEmpleado [] = [];
     this.empleadoService.getAllEmployee().subscribe(
            (res) => {
         console.log(res);
-        this.listaEmpleado = res.data;
+        this.listaEmpleado = res.results;
            },(error) =>{
             console.log(error);
            }

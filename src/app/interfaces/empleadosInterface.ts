@@ -1,15 +1,14 @@
 export interface IEmpleado {
 
-    status: string
-    data: IDataEmpleado[]
-    nessage: string
+    results: IResultsEmpleado[]
+    message: string
     
 }
 
-export interface IDataEmpleado{
+export interface IResultsEmpleado{
 
-    employee_name: string
+    name: string
     
-    profile_image: string
+    url: string
 
 }

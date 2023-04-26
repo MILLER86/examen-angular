@@ -1,4 +1,4 @@
-<h1>Regresar</h1>
+<h1>Lista de empleados</h1>
 
 <p-table
     [value]="listaEmpleado"
@@ -18,8 +18,8 @@
     </ng-template>
     <ng-template pTemplate="body" let-Empleado>
         <tr>
-            <td>{{ Empleado.employee_name }}</td>
-            <td>{{ Empleado.employee_image }}</td>
+            <td>{{ Empleado.name }}</td>
+            <td>{{ Empleado.url }}</td>
             
         </tr>
     </ng-template>
